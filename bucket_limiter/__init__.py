@@ -35,8 +35,6 @@ if expire > 0 then
 end
 
 if nTokens > currentTokens then
-  return 0
-elseif currentTokens == 0 then
   redis.call('hset', key, 'tokens', currentTokens)
   return 0
 else
