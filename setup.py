@@ -21,7 +21,7 @@ from setuptools import setup
 
 setup(
     name='Bucket-Limiter',
-    version='0.0.1',
+    version='0.2.0',
     url='https://github.com/TheWaWaR/bucket-limiter-py',
     license='MIT',
     author='Qian Linfeng',
