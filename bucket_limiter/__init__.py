@@ -28,6 +28,9 @@ for idx, key in ipairs(KEYS) do
       redis.call('hset', key, 'lastFillAt', timeNow)
     else
       currentTokens = tonumber(redis.call('hget', key, 'tokens'))
+      if currentTokens > capacity then
+        currentTokens = capacity
+      end
     end
   end
 
